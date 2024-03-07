@@ -5,11 +5,19 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const pages = ["Home", "About", "Products", "Services"];
 
 function Navbar() {
+  const navigate = useNavigate();
+  const handleClick = (page: string) => {
+    if (page === "Home") {
+      navigate("/");
+    } else {
+      navigate(`/${page.toLowerCase()}`);
+    }
+  };
   return (
     <AppBar position="sticky">
       <Container maxWidth="xl">
@@ -46,13 +54,9 @@ function Navbar() {
               <Button
                 key={page}
                 sx={{ my: 2, color: "white", display: "block" }}
+                onClick={(e) => handleClick(page)}
               >
-                <Link
-                  to={`/${page.toLowerCase()}`}
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  {page}
-                </Link>
+                {page}
               </Button>
             ))}
           </Box>

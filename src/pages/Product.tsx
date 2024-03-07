@@ -1,12 +1,12 @@
-import Navbar from './Navbar';
+import Navbar from "./Navbar";
 
 function Product() {
   return (
     <div>
       <Navbar />
-      Product
+      We will be serving soon! Stay tuned.
     </div>
   );
 }
 
-export default Product
+export default Product;

@@ -4,7 +4,7 @@ function Services() {
   return (
     <div>
       <Navbar />
-      Services
+      We will be serving soon! Stay tuned.
     </div>
   );
 }
