@@ -54,7 +54,7 @@ function Navbar() {
               <Button
                 key={page}
                 sx={{ my: 2, color: "white", display: "block" }}
-                onClick={(e) => handleClick(page)}
+                onClick={() => handleClick( page)}
               >
                 {page}
               </Button>
