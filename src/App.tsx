@@ -1,5 +1,3 @@
-import React from "react";
-import Navbar from "./pages/Navbar";
 import Home from "./pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/About";
