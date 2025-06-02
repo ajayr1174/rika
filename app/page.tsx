@@ -7,6 +7,7 @@ import CallToAction from "@/components/sections/call-to-action";
 import UpcomingEvents from "@/components/sections/upcoming-event";
 import MissionSection from "@/components/sections/mission";
 import VisionSection from "@/components/sections/vision";
+import ContactSection from "@/components/sections/contactus";
 
 export default function Home() {
   return (
@@ -15,11 +16,12 @@ export default function Home() {
       <MissionSection />
       <VisionSection />
       <UpcomingEvents />
+      <ContactSection />
       {/* <Products />
       <Features />
       <Standards />
       <Training /> */}
-      <CallToAction />
+      {/* <CallToAction /> */}
     </>
   );
 }
