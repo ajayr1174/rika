@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="flex items-center space-x-2 mb-6">
               <Shield className="h-12 w-12 text-primary" />
               <span className="text-2xl font-bold text-primary">
-                RIKA Safety
+                RIKATEK Solutions
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 ">
@@ -72,7 +72,9 @@ export default function Hero() {
             className="flex items-center space-x-2 mb-6"
           >
             <Shield className="h-12 w-12 text-primary" />
-            <span className="text-2xl font-bold text-primary">RIKA Safety</span>
+            <span className="text-2xl font-bold text-primary">
+              RIKATEK Solutions
+            </span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
