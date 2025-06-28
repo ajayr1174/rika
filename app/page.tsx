@@ -16,7 +16,6 @@ export default function Home() {
       <VisionSection />
       <UpcomingEvents />
       <ContactSection />
-      
     </>
   );
 }

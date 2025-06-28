@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Container } from "@/components/ui/container";
 import Link from "next/link";
+import emailjs from "@emailjs/browser";
 
 interface FormData {
   name: string;
@@ -9,6 +10,9 @@ interface FormData {
   subject: string;
   message: string;
 }
+const serviceId = process.env.EMAILJS_SERVICE_ID || "";
+const templateId = process.env.EMAILJS_TEMPLATE_ID || "";
+const publicKey = process.env.EMAILJS_PUBLIC_KEY || "";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -28,12 +32,26 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: formData.name,
+          email: formData.email,
+          title: formData.subject,
+          message: formData.message,
+        },
+        { publicKey: publicKey }
+      );
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      console.log(error, "eror");
+      alert("Failed to send message. Please try again.");
+    }
   };
 
   return (

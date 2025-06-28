@@ -12,7 +12,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center space-x-2">
               <Briefcase className="h-6 w-6 text-primary" />
               <span className="text-lg font-bold tracking-tight">
-                Rikatek Solutions
+                Rikatek Innovations
               </span>
             </Link>
             <p className="text-muted-foreground text-sm">
