@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import imgaeSrc from "../../assets/HUMAN_SAFETY_poster-2.png";
 
 const UpcomingEvents = () => {
   const events = [
@@ -27,32 +29,12 @@ const UpcomingEvents = () => {
         </h1>
 
         {/* Events Container */}
-        <div className="space-y-8">
-          {events.map((event) => (
-            <div
-              key={event.id}
-              className="bg-card rounded-2xl p-6 sm:p-8 lg:p-10 border-l-4 border-primary shadow-lg hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-                {/* Event Content */}
-                <div className="flex-1">
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-3">
-                    {event.title}
-                  </h2>
-                  <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                    {event.description}
-                  </p>
-                </div>
-
-                {/* Date Badge */}
-                <div className="flex-shrink-0 mt-4 lg:mt-0">
-                  <div className="bg-primary text-primary-foreground px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold text-lg md:text-xl lg:text-2xl whitespace-nowrap">
-                    {event.date}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="flex align-center justify-center">
+          <Image
+            className="w-3/4 rounded-lg shadow-lg"
+            src={imgaeSrc}
+            alt="upcoming events"
+          />
         </div>
       </div>
     </div>

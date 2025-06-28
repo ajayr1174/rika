@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="space-y-4 max-w-sm">
             <Link href="/" className="flex items-center space-x-2">
               <Briefcase className="h-6 w-6 text-primary" />
-              <span className="text-lg font-bold tracking-tight">Rika</span>
+              <span className="text-lg font-bold tracking-tight">Rikatek Solutions</span>
             </Link>
             <p className="text-muted-foreground text-sm">
               Born from a vision to drive social good through innovation, our
@@ -141,9 +141,9 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-2 mt-0.5" />
                 <span className="text-sm text-muted-foreground">
-                  123 Business Ave, Suite 500
+                  RIKATEK SOLUTIONS PVT LTD
                   <br />
-                  New York, NY 10001
+                  Pune, Maharastra
                 </span>
               </li>
               <li className="flex items-center">
@@ -152,16 +152,16 @@ export default function Footer() {
                   href="tel:+1234567890"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  (123) 456-7890
+                  (+91)123-456-7890
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-2" />
                 <a
-                  href="mailto:info@entrepreneurialoutlook.com"
+                  href="mailto:support@rikainfo.com"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  info@entrepreneurialoutlook.com
+                  support@rikainfo.com
                 </a>
               </li>
             </ul>
@@ -171,7 +171,7 @@ export default function Footer() {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © 2025 RIKA. All rights reserved.
+              © 2025 RIKATEK Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
