@@ -90,26 +90,6 @@ const ContactSection = () => {
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-primary-foreground font-semibold text-lg md:text-xl mb-1">
-                    Phone
-                  </h3>
-                  <p className="text-primary-foreground/80">
-                    (+91)123-456-7890
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-primary-foreground rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg
-                    className="w-6 h-6 text-primary"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
                     <path
                       fillRule="evenodd"
                       d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
@@ -122,9 +102,9 @@ const ContactSection = () => {
                     Office
                   </h3>
                   <p className="text-primary-foreground/80">
-                    RIKATEK Solutions Pvt Ltd.
+                    RIKATEK Innovations Pvt Ltd.
                     <br />
-                    Pune, Maharastra
+                    Vadodara, Gujarat
                   </p>
                 </div>
               </div>

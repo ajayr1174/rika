@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="flex items-center space-x-2 mb-6">
               <Shield className="h-12 w-12 text-primary" />
               <span className="text-2xl font-bold text-primary">
-                RIKATEK Solutions
+                RIKATEK Innovations
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 ">
@@ -73,7 +73,7 @@ export default function Hero() {
           >
             <Shield className="h-12 w-12 text-primary" />
             <span className="text-2xl font-bold text-primary">
-              RIKATEK Solutions
+              RIKATEK Innovations
             </span>
           </motion.div>
           <motion.h1
