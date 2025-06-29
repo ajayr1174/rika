@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { Container } from "@/components/ui/container";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
+import { Toast } from "../ui/toast";
+import { ToastViewport } from "@radix-ui/react-toast";
+import { toast } from "@/hooks/use-toast";
 
 interface FormData {
   name: string;
@@ -46,11 +49,19 @@ const ContactSection = () => {
         },
         { publicKey: publicKey }
       );
-      alert("Message sent successfully!");
+      toast({
+        title: "Success",
+        description: "Your message has been sent successfully.",
+        variant: "success",
+      });
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       console.log(error, "eror");
-      alert("Failed to send message. Please try again.");
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
     }
   };
 
